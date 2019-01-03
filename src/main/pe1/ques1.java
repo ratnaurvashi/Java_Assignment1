@@ -1,3 +1,5 @@
+package pe1;
+
 import java.util.Scanner;
 
 

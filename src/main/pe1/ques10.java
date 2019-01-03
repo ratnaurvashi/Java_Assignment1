@@ -1,14 +1,10 @@
+package pe1;
+
 import java.util.Scanner;
 
 public class ques10 {
-    public static void main(String[] args){
 
-        /** taking input */
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a string: ");
-        String s = sc.nextLine();
-        System.out.println("Enter an integer: ");
-        int n = sc.nextInt();
+    public String repeat(String s, int n){
 
         /** length of string */
         int len = s.length();
@@ -25,6 +21,18 @@ public class ques10 {
             j= index;
             n--;
         }
-        System.out.println(s);
+        return s;
+    }
+    public static void main(String[] args){
+
+        ques10 q = new ques10();
+        /** taking input */
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a string: ");
+        String t = sc.nextLine();
+        System.out.println("Enter an integer: ");
+        int m = sc.nextInt();
+
+        System.out.println(q.repeat(t,m));
     }
 }
